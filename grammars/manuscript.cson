@@ -1,0 +1,78 @@
+'name': 'Sibelius ManuScript (Tido-MSS form)'
+'scopeName': 'manuscript'
+'type': 'tree-sitter'
+'parser': 'tree-sitter-manuscript'
+'fileTypes': ['mss']
+
+folds: [
+  {
+    type: 'comment'
+  }
+  {
+    start: {index: 0, type: '{'}
+    end: {index: -1, type: '}'}
+  }
+  {
+    start: {index: 0, type: '('}
+    end: {index: -1, type: ')'}
+  }
+]
+
+comments:
+  start: '// '
+
+'scopes':
+  'program': 'source.mss'
+  'comment': 'comment.block'
+
+  'identifier': 'constant.other'
+
+  'call_expression > identifier': 'entity.name.function'
+  'call_expression > field_expression > identifier': 'entity.name.function'
+  'function > identifier': 'entity.name.function'
+
+  'number_literal': 'constant.numeric'
+  'string_literal': 'string'
+  'char_literal': 'constant'
+
+
+  '"("': 'punctuation.definition.parameters.begin.bracket.round'
+  '")"': 'punctuation.definition.parameters.end.bracket.round'
+  '"{"': 'punctuation.definition.function.body.begin.bracket.curly'
+  '"}"': 'punctuation.definition.function.body.end.bracket.curly'
+
+  '"function"': 'storage.type.function'
+
+  '"="': 'keyword.operator'
+  '"+"': 'keyword.operator'
+  '"-"': 'keyword.operator'
+  '"*"': 'keyword.operator'
+  '"/"': 'keyword.operator'
+  '"%"': 'keyword.operator'
+  '"!="': 'keyword.operator'
+  '">="': 'keyword.operator'
+  '"<="': 'keyword.operator'
+  '">"': 'keyword.operator'
+  '"<"': 'keyword.operator'
+  '"or"': 'keyword.operator'
+  '"and"': 'keyword.operator'
+  '"not"': 'keyword.operator'
+
+  '"each"': 'keyword.operator.in'
+  '"in"': 'keyword.operator.in'
+
+  '"."': 'meta.delimiter'
+  '","': 'meta.delimiter'
+
+  '"if"': 'keyword.control'
+  '"else"': 'keyword.control'
+  '"while"': 'keyword.control'
+  '"for"': 'keyword.control'
+  '"return"': 'keyword.control'
+  '"switch"': 'keyword.control'
+  '"case"': 'keyword.control'
+  '"default"': 'keyword.control'
+
+  'null': 'constant.language.null'
+  'true': 'constant.language.boolean'
+  'false': 'constant.language.boolean'
