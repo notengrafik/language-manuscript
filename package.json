@@ -4,7 +4,7 @@
   "description": "Atom language support for Sibelius ManuScript (Tido-MSS form)",
   "repository": {
     "type": "git",
-    "https://github.com/notengrafik/language-manuscript.git"
+    "url": "https://github.com/notengrafik/language-manuscript.git"
   },
   "license": "MIT",
   "engines": {
