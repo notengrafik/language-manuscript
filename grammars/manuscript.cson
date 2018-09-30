@@ -50,6 +50,7 @@ comments:
   '"/"': 'keyword.operator'
   '"%"': 'keyword.operator'
   '"!="': 'keyword.operator'
+  '"&"': 'keyword.operator'
   '">="': 'keyword.operator'
   '"<="': 'keyword.operator'
   '">"': 'keyword.operator'
