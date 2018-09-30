@@ -1,6 +1,6 @@
 # Sibelius ManuScript support in Atom
 
-Adds syntax highlighting for ManuScript files as supported by Tido's [plgToMSS](https://github.com/tido/plgToMSS/).
+Adds syntax highlighting for ManuScript files (both Sibelius' mss format as well as [Tido's mss format](https://github.com/tido/plgToMSS/).
 
 This requires [tree-sitter-manuscript](https://github.com/notengrafik/tree-sitter-manuscript/) to be installed:
 

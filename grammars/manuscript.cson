@@ -1,8 +1,8 @@
-'name': 'Sibelius ManuScript (Tido-MSS form)'
+'name': 'Sibelius ManuScript'
 'scopeName': 'manuscript'
 'type': 'tree-sitter'
 'parser': 'tree-sitter-manuscript'
-'fileTypes': ['mss']
+'fileTypes': ['plg', 'mss']
 
 folds: [
   {
@@ -33,6 +33,7 @@ comments:
 
   'number_literal': 'constant.numeric'
   'string_literal': 'string'
+  'plg_value': 'string'
   'char_literal': 'constant'
 
 
