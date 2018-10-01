@@ -2,7 +2,7 @@
 'scopeName': 'manuscript'
 'type': 'tree-sitter'
 'parser': 'tree-sitter-manuscript'
-'fileTypes': ['plg', 'mss']
+'fileTypes': ['plg', 'mss', 'msd']
 
 folds: [
   {
