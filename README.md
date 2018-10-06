@@ -12,7 +12,7 @@ This requires [tree-sitter-manuscript-plg](https://github.com/notengrafik/tree-s
     cd tree-sitter-manuscript-functions
     npm install -g
     cd ..
-    git clone git@github.com:notengrafik/tree-manuscript-sibelius-plg.git
+    git clone git@github.com:notengrafik/tree-sitter-manuscript-plg.git
     cd tree-sitter-manuscript-plg
     npm install -g
 
