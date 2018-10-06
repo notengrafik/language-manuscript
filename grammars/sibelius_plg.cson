@@ -1,0 +1,31 @@
+'name': 'Sibelius plugin data'
+'scopeName': 'source.sibelius_plg'
+'type': 'tree-sitter'
+'parser': 'tree-sitter-manuscript-plg'
+'fileTypes': ['plg', 'msd']
+
+folds: [
+  {
+    type: 'comment'
+  }
+  {
+    start: {index: 0, type: '{'}
+    end: {index: -1, type: '}'}
+  }
+  {
+    start: {index: 0, type: '('}
+    end: {index: -1, type: ')'}
+  }
+]
+
+comments:
+  start: '// '
+
+'scopes':
+  'data': 'source.plg'
+
+  'name': 'constant.other'
+  'value': 'string'
+
+  '"{"': 'punctuation.definition.function.body.begin.bracket.curly'
+  '"}"': 'punctuation.definition.function.body.end.bracket.curly'

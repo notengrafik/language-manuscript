@@ -1,7 +1,8 @@
 {
   "name": "language-manuscript",
+  "main": "lib/main",
   "version": "0.0.0",
-  "description": "Atom language support for Sibelius ManuScript (Tido-MSS form)",
+  "description": "Atom language support for Sibelius ManuScript",
   "repository": {
     "type": "git",
     "url": "https://github.com/notengrafik/language-manuscript.git"
@@ -11,6 +12,7 @@
     "atom": "*"
   },
   "dependencies": {
-    "tree-sitter-manuscript": "file:/usr/local/lib/node_modules/tree-sitter-manuscript"
+    "tree-sitter-manuscript-functions": "file:/usr/local/lib/node_modules/tree-sitter-manuscript-functions",
+    "tree-sitter-manuscript-plg": "file:/usr/local/lib/node_modules/tree-sitter-manuscript-plg"
   }
 }

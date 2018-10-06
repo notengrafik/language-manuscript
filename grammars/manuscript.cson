@@ -1,8 +1,9 @@
-'name': 'Sibelius ManuScript'
+'name': 'Sibelius ManuScript functions'
 'scopeName': 'manuscript'
 'type': 'tree-sitter'
-'parser': 'tree-sitter-manuscript'
-'fileTypes': ['plg', 'mss', 'msd']
+'parser': 'tree-sitter-manuscript-functions'
+'fileTypes': ['mss']
+'injectionRegExp': 'manuscript'
 
 folds: [
   {
@@ -22,7 +23,7 @@ comments:
   start: '// '
 
 'scopes':
-  'program': 'source.mss'
+  'program': 'source.manuscript'
   'comment': 'comment.block'
 
   'identifier': 'constant.other'
