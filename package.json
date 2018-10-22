@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "tree-sitter-manuscript-functions": "file:/usr/local/lib/node_modules/tree-sitter-manuscript-functions",
-    "tree-sitter-manuscript-plg": "file:/usr/local/lib/node_modules/tree-sitter-manuscript-plg"
+    "tree-sitter-manuscript-plg": "file:/usr/local/lib/node_modules/tree-sitter-manuscript-plg",
+    "plg-compiler": "file:/usr/local/lib/node_modules/plg-compiler"
   }
 }
