@@ -1,0 +1,35 @@
+'.source.plg':
+  'function':
+    'prefix': 'fn'
+    'body': '"($1) {\n\t$2;\n}"'
+'.source.manuscript':
+  'switch statement':
+    'prefix': 'switch'
+    'body': """
+    switch (${1:expression}) {
+      case (${2:expression}) {
+        ;
+      }
+    }
+    """
+  'case block in switch statement':
+    'prefix': 'case'
+    'body': 'case (${1:expression}) {\n\t$2;\n}'
+  'default block in switch statement':
+    'prefix': 'default'
+    'body': 'default {\n\t$1;\n}'
+  'if statement':
+    'prefix': 'if'
+    'body': 'if (${1:condition}) {\n\t$2;\n}'
+  'numeric for loop':
+    'prefix': 'for'
+    'body': 'for ${1:index} = ${2:expression} to ${3:expression} {\n\t\$4;\n}'
+  'for each loop':
+    'prefix': 'for each'
+    'body': 'for each ${1:identifier} in ${2:expression} {\n\t;\n}'
+  'while loop':
+    'prefix': 'while'
+    'body': 'while (${1:expression}) {\n\t$2;\n}'
+  'user property':
+    'prefix': '._'
+    'body': '._property:$1'
