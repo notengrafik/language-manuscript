@@ -24,8 +24,15 @@ comments:
 'scopes':
   'data': 'source.plg'
 
-  'name': 'constant.other'
+  'label': 'constant.other'
+  'function_label': 'entity.name.function'
+
   'value': 'string'
+  'function': 'string'
 
   '"{"': 'punctuation.definition.function.body.begin.bracket.curly'
   '"}"': 'punctuation.definition.function.body.end.bracket.curly'
+
+  'docdef': 'documentation'
+  'doclabel': 'entity.name.tag'
+  'docstring': 'comment'
