@@ -2,14 +2,21 @@
   'function':
     'prefix': 'fn'
     'body': '"($1) {\n\t$2;\n}"'
+  'initialize':
+    'prefix': 'Initialize'
+    'body': """
+    Initialize "() {
+    \tAddToPluginsMenu('$1', '${2:Run}');
+    }"
+    """
 '.source.manuscript':
   'switch statement':
     'prefix': 'switch'
     'body': """
     switch (${1:expression}) {
-      case (${2:expression}) {
-        ;
-      }
+    \tcase (${2:expression}) {
+    \t\t$3;
+    \t}
     }
     """
   'case block in switch statement':
@@ -32,4 +39,4 @@
     'body': 'while (${1:expression}) {\n\t$2;\n}'
   'user property':
     'prefix': '._'
-    'body': '._property:$1'
+    'body': '._property:${1:identifier}'
