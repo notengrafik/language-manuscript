@@ -6,7 +6,7 @@
     'prefix': 'Initialize'
     'body': """
     Initialize "() {
-    \tAddToPluginsMenu('$1', '${2:Run}');
+    \tAddToPluginsMenu(${1:PLGTITLE}, '${2:Run}');
     }"
     """
 '.source.manuscript':
