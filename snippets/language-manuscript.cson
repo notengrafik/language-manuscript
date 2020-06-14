@@ -10,6 +10,9 @@
     }"
     """
 '.source.manuscript':
+  'function':
+    'prefix': 'fn'
+    'body': 'function ${1:identifier} ($2) {\n\t$3;\n}  //$end'
   'switch statement':
     'prefix': 'switch'
     'body': """
